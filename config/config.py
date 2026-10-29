@@ -18,6 +18,7 @@ FEATURE_IMPORTANCE_DIR = RESULTS_DIR / "feature_importance"
 
 RAW_DATA_FILE = RAW_DATA_DIR / "metadata.csv"
 PROCESSED_TRAIN_FILE = PROCESSED_DATA_DIR / "train.csv"
+PROCESSED_VAL_FILE = PROCESSED_DATA_DIR / "val.csv"
 PROCESSED_TEST_FILE = PROCESSED_DATA_DIR / "test.csv"
 
 # ---------------------------------------------------------------------------
@@ -31,10 +32,18 @@ RECORD_ID_COLUMN = "record_id"
 # Experiment settings
 # ---------------------------------------------------------------------------
 RANDOM_STATE = 42
-TEST_SIZE = 0.2
-CV_FOLDS = 5
-N_SELECTED_FEATURES = 30
-SCORING = "f1_macro"
+
+# Patient-level split: 70% train, 15% validation, 15% test
+TRAIN_SIZE = 0.70
+VAL_SIZE = 0.15
+TEST_SIZE = 0.15
+
+# Feature selection: top-k values to compare (plus the full 103 features)
+TOP_K_VALUES = [10, 20, 30, 50]
+CORRELATION_THRESHOLD = 0.90
+
+# Model selection: F1-score of the abnormal class (figo_label = 1)
+SCORING = "f1"
 
 MODELS = [
     "logistic_regression",
@@ -42,6 +51,6 @@ MODELS = [
     "support_vector_machine",
     "decision_tree",
     "random_forest",
-    "gradient_boosting",
     "xgboost",
+    "lightgbm",
 ]
