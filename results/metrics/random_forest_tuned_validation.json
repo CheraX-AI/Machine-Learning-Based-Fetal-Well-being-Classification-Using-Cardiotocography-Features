@@ -1,0 +1,69 @@
+{
+  "experiment": "tuned_random_forest_all_103_features",
+  "random_seed": 42,
+  "training_rows": 14540,
+  "validation_rows": 3115,
+  "feature_count": 103,
+  "target": "figo_label",
+  "positive_class": 1,
+  "scaling": null,
+  "outlier_handling": null,
+  "feature_selection": null,
+  "search_method": "RandomizedSearchCV",
+  "search_iterations": 20,
+  "cross_validation": "5-fold StratifiedGroupKFold",
+  "group_column": "patient_id",
+  "best_cross_validation_f1": 0.9013027722233644,
+  "best_parameters": {
+    "n_estimators": 300,
+    "min_samples_split": 10,
+    "min_samples_leaf": 2,
+    "max_features": 0.5,
+    "max_depth": null,
+    "class_weight": "balanced",
+    "bootstrap": true
+  },
+  "validation_metrics": {
+    "accuracy": 0.8908507223113965,
+    "abnormal_precision": 0.8883720930232558,
+    "abnormal_recall": 0.9116945107398569,
+    "abnormal_f1": 0.8998822143698468
+  },
+  "confusion_matrix_labels_0_1": [
+    [
+      1247,
+      192
+    ],
+    [
+      148,
+      1528
+    ]
+  ],
+  "classification_report": {
+    "normal (0)": {
+      "precision": 0.8939068100358423,
+      "recall": 0.8665740097289785,
+      "f1-score": 0.8800282286520819,
+      "support": 1439.0
+    },
+    "abnormal (1)": {
+      "precision": 0.8883720930232558,
+      "recall": 0.9116945107398569,
+      "f1-score": 0.8998822143698468,
+      "support": 1676.0
+    },
+    "accuracy": 0.8908507223113965,
+    "macro avg": {
+      "precision": 0.891139451529549,
+      "recall": 0.8891342602344177,
+      "f1-score": 0.8899552215109643,
+      "support": 3115.0
+    },
+    "weighted avg": {
+      "precision": 0.8909289012996964,
+      "recall": 0.8908507223113965,
+      "f1-score": 0.8907105015454925,
+      "support": 3115.0
+    }
+  }
+}
