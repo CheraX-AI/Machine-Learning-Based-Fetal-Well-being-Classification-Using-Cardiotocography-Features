@@ -1,0 +1,54 @@
+Train (14540, 106) Val (3115, 106) features 103
+NaN in train features: 0  inf: 0
+Features after correlation filter (0.90): 55
+k = 10 -> intersection size 8
+k = 20 -> intersection size 14
+k = 30 -> intersection size 23
+k = 50 -> intersection size 47
+all_103 Logistic Regression F1 0.9790 AUC 0.9981 (0.5s)
+all_103 KNN F1 0.8479 AUC 0.9253 (0.7s)
+all_103 SVM F1 0.9673 AUC 0.9960 (10.2s)
+all_103 Decision Tree F1 0.8300 AUC 0.8145 (3.0s)
+all_103 Random Forest F1 0.8981 AUC 0.9632 (3.5s)
+all_103 XGBoost F1 0.9477 AUC 0.9897 (5.3s)
+all_103 LightGBM F1 0.9497 AUC 0.9895 (3.5s)
+top_10 Logistic Regression F1 0.8201 AUC 0.9053 (0.0s)
+top_10 KNN F1 0.8028 AUC 0.8609 (0.2s)
+top_10 SVM F1 0.8201 AUC 0.8934 (11.5s)
+top_10 Decision Tree F1 0.7661 AUC 0.7481 (0.2s)
+top_10 Random Forest F1 0.8185 AUC 0.8972 (1.2s)
+top_10 XGBoost F1 0.8194 AUC 0.8868 (0.7s)
+top_10 LightGBM F1 0.8194 AUC 0.8954 (1.6s)
+top_20 Logistic Regression F1 0.8273 AUC 0.9108 (0.1s)
+top_20 KNN F1 0.8093 AUC 0.8731 (0.8s)
+top_20 SVM F1 0.8295 AUC 0.9009 (12.8s)
+top_20 Decision Tree F1 0.7775 AUC 0.7569 (0.3s)
+top_20 Random Forest F1 0.8295 AUC 0.9071 (1.3s)
+top_20 XGBoost F1 0.8248 AUC 0.8953 (0.8s)
+top_20 LightGBM F1 0.8271 AUC 0.9067 (1.8s)
+top_30 Logistic Regression F1 0.8819 AUC 0.9525 (0.1s)
+top_30 KNN F1 0.8418 AUC 0.9119 (0.2s)
+top_30 SVM F1 0.8902 AUC 0.9551 (9.8s)
+top_30 Decision Tree F1 0.8234 AUC 0.8061 (0.4s)
+top_30 Random Forest F1 0.8804 AUC 0.9440 (1.6s)
+top_30 XGBoost F1 0.8775 AUC 0.9484 (1.0s)
+top_30 LightGBM F1 0.8839 AUC 0.9513 (1.8s)
+top_50 Logistic Regression F1 0.9443 AUC 0.9877 (0.3s)
+top_50 KNN F1 0.8509 AUC 0.9248 (0.3s)
+top_50 SVM F1 0.9446 AUC 0.9884 (7.7s)
+top_50 Decision Tree F1 0.8267 AUC 0.8096 (0.9s)
+top_50 Random Forest F1 0.8918 AUC 0.9578 (2.1s)
+top_50 XGBoost F1 0.9329 AUC 0.9827 (1.5s)
+top_50 LightGBM F1 0.9350 AUC 0.9845 (2.1s)
+Top 10 |coef| features (scaled LR):
+   F_A_N -6.228
+   FU_C_WCTTF 4.171
+   F_D_N 4.129
+   F_VD_N 3.98
+   F_LPF_ST01 3.107
+   U_MN -3.046
+   F_LD_N 2.977
+   FU_SE_WCTTF -2.617
+   F_K 2.584
+   FU_EF_WCTTF 2.536
+DONE
