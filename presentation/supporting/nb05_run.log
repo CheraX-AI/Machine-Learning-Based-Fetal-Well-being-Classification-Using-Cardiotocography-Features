@@ -1,0 +1,241 @@
+[NbConvertApp] Converting notebook 05_hyperparameter_tuning.ipynb to notebook
+C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Scripts\jupyter-nbconvert.EXE\__main__.py", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\traitlets\config\application.py", line 1080, in launch_instance
+    app.start()
+    ~~~~~~~~~^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        notebook_filename, resources, input_buffer=input_buffer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        notebook_filename, resources=resources
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        nbformat.read(file_stream, as_version=4), resources=resources, **kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\exporters\notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 353, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+                ~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\preprocessors\base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\preprocessors\execute.py", line 103, in preprocess
+    self.preprocess_cell(cell, resources, index)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbconvert\preprocessors\execute.py", line 124, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Rathishan\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\Rathishan\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+rows = []
+best = {}
+
+for model_name in search_space:
+    candidates = search_space[model_name]
+    best_key = None
+
+    for params in candidates:
+        start = time.time()
+
+        # Fit on the TRAINING set, score on the VALIDATION set
+        pipe = make_pipeline(model_name, params)
+        pipe.fit(X_train, y_train)
+        val_pred = pipe.predict(X_val)
+        if model_name == "SVM":
+            val_score = pipe.decision_function(X_val)
+        else:
+            val_score = pipe.predict_proba(X_val)[:, 1]
+
+        val_f1 = float(f1_score(y_val, val_pred, pos_label=1))
+        val_auc = float(roc_auc_score(y_val, val_score))
+        rows.append({"model": model_name, "params": json.dumps(params), "val_f1": val_f1,
+                     "val_auc": val_auc, "seconds": round(time.time() - start, 1)})
+
+        # Best = highest validation F1; ROC-AUC breaks ties
+        key = (val_f1, val_auc)
+        if best_key is None or key > best_key:
+            best_key = key
+            best[model_name] = {"params": params, "val_f1": val_f1, "val_auc": val_auc}
+
+    print(model_name, "| best validation F1 %.4f, AUC %.4f" % (best[model_name]["val_f1"], best[model_name]["val_auc"]))
+    print("   ", best[model_name]["params"])
+------------------
+
+----- stdout -----
+Logistic Regression | best validation F1 0.9799, AUC 0.9982
+    {'C': 10}
+----- stdout -----
+KNN | best validation F1 0.8533, AUC 0.9439
+    {'n_neighbors': 11, 'weights': 'distance', 'p': 2}
+----- stdout -----
+SVM | best validation F1 0.9788, AUC 0.9983
+    {'C': 100, 'gamma': 0.001}
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mMemoryError[39m                               Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[4][39m[32m, line 18[39m
+[32m     14[39m         val_pred = pipe.predict(X_val)
+[32m     15[39m         [38;5;28;01mif[39;00m model_name == [33m"SVM"[39m:
+[32m     16[39m             val_score = pipe.decision_function(X_val)
+[32m     17[39m         [38;5;28;01melse[39;00m:
+[32m---> [39m[32m18[39m             val_score = pipe.predict_proba(X_val)[:, [32m1[39m]
+[32m     19[39m 
+[32m     20[39m         val_f1 = float(f1_score(y_val, val_pred, pos_label=[32m1[39m))
+[32m     21[39m         val_auc = float(roc_auc_score(y_val, val_score))
+
+[36mFile [39m[32m~\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\sklearn\pipeline.py:925[39m, in [36mPipeline.predict_proba[39m[34m(self, X, **params)[39m
+[32m    923[39m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m _routing_enabled():
+[32m    924[39m     [38;5;28;01mfor[39;00m _, name, transform [38;5;129;01min[39;00m [38;5;28mself[39m._iter(with_final=[38;5;28;01mFalse[39;00m):
+[32m--> [39m[32m925[39m         Xt = [30;43mtransform[39;49m[30;43m.[39;49m[30;43mtransform[39;49m[30;43m([39;49m[30;43mXt[39;49m[30;43m)[39;49m
+[32m    926[39m     [38;5;28;01mreturn[39;00m [38;5;28mself[39m.steps[-[32m1[39m][[32m1[39m].predict_proba(Xt, **params)
+[32m    928[39m [38;5;66;03m# metadata routing enabled[39;00m
+
+[36mFile [39m[32m~\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\sklearn\utils\_set_output.py:327[39m, in [36m_wrap_method_output.<locals>.wrapped[39m[34m(self, X, *args, **kwargs)[39m
+[32m    325[39m [38;5;129m@wraps[39m(f)
+[32m    326[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mwrapped[39m([38;5;28mself[39m, X, *args, **kwargs):
+[32m--> [39m[32m327[39m     data_to_wrap = [30;43mf[39;49m[30;43m([39;49m[30;43mself[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mX[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43margs[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mkwargs[39;49m[30;43m)[39;49m
+[32m    328[39m     [38;5;28;01mif[39;00m [38;5;28misinstance[39m(data_to_wrap, [38;5;28mtuple[39m):
+[32m    329[39m         [38;5;66;03m# only wrap the first output for cross decomposition[39;00m
+[32m    330[39m         return_tuple = (
+[32m    331[39m             _wrap_data_with_container(method, data_to_wrap[[32m0[39m], X, [38;5;28mself[39m),
+[32m    332[39m             *data_to_wrap[[32m1[39m:],
+[32m    333[39m         )
+
+[36mFile [39m[32m~\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\sklearn\impute\_base.py:617[39m, in [36mSimpleImputer.transform[39m[34m(self, X)[39m
+[32m    602[39m [38;5;250m[39m[33;03m"""Impute all missing values in `X`.[39;00m
+[32m    603[39m 
+[32m    604[39m [33;03mParameters[39;00m
+[32m   (...)[39m[32m    613[39m [33;03m    `X` with imputed values.[39;00m
+[32m    614[39m [33;03m"""[39;00m
+[32m    615[39m check_is_fitted([38;5;28mself[39m)
+[32m--> [39m[32m617[39m X = [30;43mself[39;49m[30;43m.[39;49m[30;43m_validate_input[39;49m[30;43m([39;49m[30;43mX[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43min_fit[39;49m[30;43m=[39;49m[30;43;01mFalse[39;49;00m[30;43m)[39;49m
+[32m    618[39m statistics = [38;5;28mself[39m.statistics_
+[32m    620[39m [38;5;28;01mif[39;00m X.shape[[32m1[39m] != statistics.shape[[32m0[39m]:
+
+[36mFile [39m[32m~\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\sklearn\impute\_base.py:356[39m, in [36mSimpleImputer._validate_input[39m[34m(self, X, in_fit)[39m
+[32m    353[39m     ensure_all_finite = [38;5;28;01mTrue[39;00m
+[32m    355[39m [38;5;28;01mtry[39;00m:
+[32m--> [39m[32m356[39m     X = [30;43mvalidate_data[39;49m[30;43m([39;49m
+[32m    357[39m [30;43m        [39;49m[30;43mself[39;49m[30;43m,[39;49m
+[32m    358[39m [30;43m        [39;49m[30;43mX[39;49m[30;43m,[39;49m
+[32m    359[39m [30;43m        [39;49m[30;43mreset[39;49m[30;43m=[39;49m[30;43min_fit[39;49m[30;43m,[39;49m
+[32m    360[39m [30;43m        [39;49m[30;43maccept_sparse[39;49m[30;43m=[39;49m[30;43m"[39;49m[30;43mcsc[39;49m[30;43m"[39;49m[30;43m,[39;49m
+[32m    361[39m [30;43m        [39;49m[30;43mdtype[39;49m[30;43m=[39;49m[30;43mdtype[39;49m[30;43m,[39;49m
+[32m    362[39m [30;43m        [39;49m[30;43mforce_writeable[39;49m[30;43m=[39;49m[30;43;01mTrue[39;49;00m[30;43m [39;49m[30;43;01mif[39;49;00m[30;43m [39;49m[30;43;01mnot[39;49;00m[30;43m [39;49m[30;43min_fit[39;49m[30;43m [39;49m[30;43;01melse[39;49;00m[30;43m [39;49m[30;43;01mNone[39;49;00m[30;43m,[39;49m
+[32m    363[39m [30;43m        [39;49m[30;43mensure_all_finite[39;49m[30;43m=[39;49m[30;43mensure_all_finite[39;49m[30;43m,[39;49m
+[32m    364[39m [30;43m        [39;49m[30;43mcopy[39;49m[30;43m=[39;49m[30;43mself[39;49m[30;43m.[39;49m[30;43mcopy[39;49m[30;43m,[39;49m
+[32m    365[39m [30;43m    [39;49m[30;43m)[39;49m
+[32m    366[39m [38;5;28;01mexcept[39;00m [38;5;167;01mValueError[39;00m [38;5;28;01mas[39;00m ve:
+[32m    367[39m     [38;5;28;01mif[39;00m [33m"[39m[33mcould not convert[39m[33m"[39m [38;5;129;01min[39;00m [38;5;28mstr[39m(ve):
+
+[36mFile [39m[32m~\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\sklearn\utils\validation.py:3041[39m, in [36mvalidate_data[39m[34m(_estimator, X, y, reset, validate_separately, skip_check_array, **check_params)[39m
+[32m   3039[39m         out = X, y
+[32m   3040[39m [38;5;28;01melif[39;00m [38;5;129;01mnot[39;00m no_val_X [38;5;129;01mand[39;00m no_val_y:
+[32m-> [39m[32m3041[39m     out = [30;43mcheck_array[39;49m[30;43m([39;49m[30;43mX[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43minput_name[39;49m[30;43m=[39;49m[30;43m"[39;49m[30;43mX[39;49m[30;43m"[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43m*[39;49m[30;43m*[39;49m[30;43mcheck_params[39;49m[30;43m)[39;49m
+[32m   3042[39m [38;5;28;01melif[39;00m no_val_X [38;5;129;01mand[39;00m [38;5;129;01mnot[39;00m no_val_y:
+[32m   3043[39m     out = _check_y(y, **check_params)
+
+[36mFile [39m[32m~\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\sklearn\utils\validation.py:1100[39m, in [36mcheck_array[39m[34m(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_writeable, ensure_all_finite, ensure_non_negative, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)[39m
+[32m   1097[39m [38;5;28;01mif[39;00m copy:
+[32m   1098[39m     [38;5;28;01mif[39;00m _is_numpy_namespace(xp):
+[32m   1099[39m         [38;5;66;03m# only make a copy if `array` and `array_orig` may share memory`[39;00m
+[32m-> [39m[32m1100[39m         [38;5;28;01mif[39;00m [30;43mnp[39;49m[30;43m.[39;49m[30;43mmay_share_memory[39;49m[30;43m([39;49m[30;43marray[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43marray_orig[39;49m[30;43m)[39;49m:
+[32m   1101[39m             array = _asarray_with_order(
+[32m   1102[39m                 array, dtype=dtype, order=order, copy=[38;5;28;01mTrue[39;00m, xp=xp
+[32m   1103[39m             )
+[32m   1104[39m     [38;5;28;01melse[39;00m:
+[32m   1105[39m         [38;5;66;03m# always make a copy for non-numpy arrays[39;00m
+
+[36mFile [39m[32m~\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\pandas\core\generic.py:1982[39m, in [36mNDFrame.__array__[39m[34m(self, dtype, copy)[39m
+[32m   1978[39m             [38;5;66;03m# and np.array(values, copy=False) will not raise an error[39;00m
+[32m   1979[39m             raise ValueError(
+[32m   1980[39m                 [33m"Unable to avoid copy while creating an array as requested."[39m
+[32m   1981[39m             )
+[32m-> [39m[32m1982[39m         values = self._values
+[32m   1983[39m         [38;5;28;01mif[39;00m copy [38;5;28;01mis[39;00m [38;5;28;01mNone[39;00m:
+[32m   1984[39m             [38;5;66;03m# Note: branch avoids `copy=None` for NumPy 1.x support[39;00m
+[32m   1985[39m             arr = np.asarray(values, dtype=dtype)
+
+[36mFile [39m[32m~\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\pandas\core\frame.py:888[39m, in [36mDataFrame._values[39m[34m(self)[39m
+[32m    884[39m         mgr = self._mgr
+[32m    885[39m 
+[32m    886[39m         blocks = mgr.blocks
+[32m    887[39m         [38;5;28;01mif[39;00m len(blocks) != [32m1[39m:
+[32m--> [39m[32m888[39m             [38;5;28;01mreturn[39;00m ensure_wrapped_if_datetimelike(self.values)
+[32m    889[39m 
+[32m    890[39m         arr = blocks[[32m0[39m].values
+[32m    891[39m         [38;5;28;01mif[39;00m arr.ndim == [32m1[39m:
+
+[36mFile [39m[32m~\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\pandas\core\frame.py:20320[39m, in [36mDataFrame.values[39m[34m(self)[39m
+[32m  20316[39m         >>> df3.to_numpy(dtype=[33m"float32"[39m, copy=[38;5;28;01mTrue[39;00m)
+[32m  20317[39m         array([[ 1.,  3.],
+[32m  20318[39m                [ [32m2.[39m, nan]], dtype=float32)
+[32m  20319[39m         """
+[32m> [39m[32m20320[39m         [38;5;28;01mreturn[39;00m self._mgr.as_array()
+
+[36mFile [39m[32m~\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\pandas\core\internals\managers.py:1908[39m, in [36mBlockManager.as_array[39m[34m(self, dtype, copy, na_value)[39m
+[32m   1906[39m         arr.flags.writeable = [38;5;28;01mFalse[39;00m
+[32m   1907[39m [38;5;28;01melse[39;00m:
+[32m-> [39m[32m1908[39m     arr = [30;43mself[39;49m[30;43m.[39;49m[30;43m_interleave[39;49m[30;43m([39;49m[30;43mdtype[39;49m[30;43m=[39;49m[30;43mdtype[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mna_value[39;49m[30;43m=[39;49m[30;43mna_value[39;49m[30;43m)[39;49m
+[32m   1909[39m     [38;5;66;03m# The underlying data was copied within _interleave, so no need[39;00m
+[32m   1910[39m     [38;5;66;03m# to further copy if copy=True or setting na_value[39;00m
+[32m   1912[39m [38;5;28;01mif[39;00m na_value [38;5;129;01mis[39;00m lib.no_default:
+
+[36mFile [39m[32m~\Desktop\Desktop\Git\ML_Module\Machine-Learning-Based-Fetal-Well-being-Classification-Using-Cardiotocography-Features\venv\Lib\site-packages\pandas\core\internals\managers.py:1943[39m, in [36mBlockManager._interleave[39m[34m(self, dtype, na_value)[39m
+[32m   1940[39m [38;5;66;03m# error: Argument 1 to "ensure_np_dtype" has incompatible type[39;00m
+[32m   1941[39m [38;5;66;03m# "Optional[dtype[Any]]"; expected "Union[dtype[Any], ExtensionDtype]"[39;00m
+[32m   1942[39m dtype = ensure_np_dtype(dtype)  [38;5;66;03m# type: ignore[arg-type][39;00m
+[32m-> [39m[32m1943[39m result = [30;43mnp[39;49m[30;43m.[39;49m[30;43mempty[39;49m[30;43m([39;49m[30;43mself[39;49m[30;43m.[39;49m[30;43mshape[39;49m[30;43m,[39;49m[30;43m [39;49m[30;43mdtype[39;49m[30;43m=[39;49m[30;43mdtype[39;49m[30;43m)[39;49m
+[32m   1945[39m itemmask = np.zeros([38;5;28mself[39m.shape[[32m0[39m])
+[32m   1947[39m [38;5;28;01mif[39;00m dtype == np.dtype([33m"[39m[33mobject[39m[33m"[39m) [38;5;129;01mand[39;00m na_value [38;5;129;01mis[39;00m lib.no_default:
+[32m   1948[39m     [38;5;66;03m# much more performant than using to_numpy below[39;00m
+
+[31mMemoryError[39m: Unable to allocate 2.45 MiB for an array with shape (103, 3115) and data type float64
+
